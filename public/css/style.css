@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@200;300;400;500;600;700;800&display=swap');
+
+
+.form-control:focus {
+	color: #212529;
+	background-color: #fff;
+	border-color: #b884fd;
+	outline: 0;
+	box-shadow: 0 0 0 0.05rem rgb(184, 132, 253);
+}
+*{margin:0;
+padding: 0;
+outline: none;
+font-size: 20px;
+}
+body{
+    font-family: 'Anek Telugu', sans-serif;
+    font-size: 18   px;
+    color:#222;
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-light{
+   
+        background-color: #b884fd !important;
+    
+}
+
+
+
+
+/* Header Section */
+
+.header .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.header h2{}
+.header h2 a {
+    font-size: 45px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+.header h2 a:hover{
+    color:#eee;
+    transition: .3s;
+}
+
+
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    float: right;
+}
+.menu li {
+    display: inline-block;
+    float: left;
+    padding: 2px 8px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    transition: .3s;
+}
+.menu li a:hover{
+    color:#eee;
+    transition: .3s;
+}
+
+/* Panel Section */
+
+.panel{
+color: #fff;
+}
+.panel a{
+    float: right;
+}
+
+
+/* Content Section */
+
+.content {
+    box-sizing: border-box;
+   
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,.2);
+    min-height: 60vh;
+}
+
+
+table{
+    padding: 15px;
+}
+table thead {
+    background: #E5E4EA;
+}
+
+
+table tr th:last-child ,table tr td:last-child,table tr th:first-child ,table tr td:first-child{
+    text-align: center;
+}
+table tr {
+    vertical-align: middle;
+}
+
+
+#addr{
+    padding: 0;
+}
+#addr span {
+	transform: rotate(-90deg);
+}

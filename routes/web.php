@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\CurdController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('Home');
+// });
+Route::get('/', [CurdController::class,'Home']);
+Route::get('/create', function () {
+    return view('Create');
 });
+Route::post('/insert', [CurdController::class,'Create']);
+Route::get('/update', function () {
+    return view('Update');
+});
+Route::get('/edit/{id}',[CurdController::class,'SingleView']);
+Route::post('/updatedata', [CurdController::class,'UpdateData']);
+
+
+
+
+Route::get('/delete/{id}',[CurdController::class,'Delete']);
